@@ -1,0 +1,337 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Logo Styles */
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4e60ff;
+}
+
+/* Main Navigation Styles */
+.main-nav {
+    flex: 1;
+    margin: 0 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a:hover {
+    color: #4e60ff;
+}
+
+.nav-links li a i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    list-style: none;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #555;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f8f9fa;
+    color: #4e60ff;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.search-bar form {
+    display: flex;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #4e60ff;
+    box-shadow: 0 0 0 3px rgba(78, 96, 255, 0.1);
+}
+
+.search-bar button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #4e60ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #3a4bcd;
+}
+
+/* Nav Icons Styles */
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-link {
+    position: relative;
+    margin-left: 20px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon-link:hover {
+    color: #4e60ff;
+}
+
+.icon-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff5c5c;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Menu Button (Hidden by default) */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Mobile Menu Styles (Hidden by default) */
+.mobile-menu {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-search {
+    margin-bottom: 20px;
+}
+
+.mobile-search form {
+    display: flex;
+    position: relative;
+}
+
+.mobile-search input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 14px;
+    outline: none;
+}
+
+.mobile-search button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #4e60ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.mobile-nav-links {
+    list-style: none;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 15px;
+}
+
+.mobile-nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-dropdown-menu {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    display: none;
+}
+
+.mobile-dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-dropdown-menu li a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mobile-dropdown.active .mobile-dropdown-menu {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .search-bar {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .search-bar {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        order: 1;
+    }
+    
+    .logo {
+        order: 0;
+    }
+    
+    .nav-icons {
+        order: 2;
+        margin-left: auto;
+    }
+    
+    .navbar .container {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-link {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    
+    .icon-badge {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+  }
