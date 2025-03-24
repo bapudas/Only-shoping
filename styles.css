@@ -1455,3 +1455,378 @@ body {
     height: 50px;
   }
 }
+/* Offers Section */
+.offers-section {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.05), rgba(52, 152, 219, 0.05));
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Offer Banner */
+.offer-banner {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.offer-image {
+  flex: 1;
+  min-width: 300px;
+  height: 350px;
+  position: relative;
+}
+
+.offer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.offer-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-title {
+  font-size: 1.8rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.offer-description {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.current-price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.original-price {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+}
+
+.discount {
+  background: var(--success);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.countdown {
+  margin: 2rem 0;
+}
+
+.countdown-title {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.timer {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer-unit {
+  background: var(--secondary);
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 70px;
+}
+
+.timer-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.timer-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}
+
+.offer-features {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.feature i {
+  color: var(--success);
+  font-size: 1.2rem;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Additional Offers */
+.additional-offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.small-offer {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.small-offer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.small-offer-image {
+  height: 180px;
+  position: relative;
+}
+
+.small-offer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.small-offer-content {
+  padding: 1.5rem;
+}
+
+.small-offer-title {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.small-price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.small-current-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.small-original-price {
+  font-size: 1rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+}
+
+.small-cta {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: var(--secondary);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.small-cta:hover {
+  background: var(--primary);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .offer-banner {
+    flex-direction: column;
+  }
+  
+  .offer-image {
+    height: 250px;
+  }
+  
+  .offer-content {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers-section {
+    padding: 3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .offer-title {
+    font-size: 1.5rem;
+  }
+  
+  .current-price {
+    font-size: 1.8rem;
+  }
+  
+  .original-price {
+    font-size: 1.3rem;
+  }
+  
+  .timer {
+    gap: 0.7rem;
+  }
+  
+  .timer-unit {
+    min-width: 60px;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .timer-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .timer {
+    gap: 0.5rem;
+  }
+  
+  .timer-unit {
+    min-width: 50px;
+    padding: 0.5rem 0.6rem;
+  }
+  
+  .timer-value {
+    font-size: 1.3rem;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+    }
