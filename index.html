@@ -11,12 +11,17 @@
 <body>
     <header class="navbar">
         <div class="container">
+            <!-- Mobile Menu Button (Visible only on mobile) -->
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
             <!-- Logo -->
             <div class="logo">
                 <a href="#"><span>Shop</span>Hub</a>
             </div>
             
-            <!-- Navigation Menu -->
+            <!-- Desktop Navigation Menu (Hidden on mobile) -->
             <nav class="main-nav">
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
@@ -35,7 +40,7 @@
                 </ul>
             </nav>
             
-            <!-- Search Bar -->
+            <!-- Desktop Search Bar (Hidden on mobile) -->
             <div class="search-bar">
                 <form action="#">
                     <input type="text" placeholder="Search products...">
@@ -45,22 +50,17 @@
             
             <!-- Icons -->
             <div class="nav-icons">
-                <a href="#" class="icon-link"><i class="far fa-heart"></i><span class="icon-badge">3</span></a>
-                <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i><span class="icon-badge">5</span></a>
-                <a href="#" class="icon-link"><i class="far fa-user"></i></a>
+                <a href="#" class="icon-link" aria-label="Wishlist"><i class="far fa-heart"></i><span class="icon-badge">3</span></a>
+                <a href="#" class="icon-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i><span class="icon-badge">5</span></a>
+                <a href="#" class="icon-link" aria-label="Account"><i class="far fa-user"></i></a>
             </div>
-            
-            <!-- Mobile Menu Button -->
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
         
         <!-- Mobile Menu (hidden by default) -->
         <div class="mobile-menu">
             <div class="mobile-search">
                 <form action="#">
-                    <input type="text" placeholder="Search...">
+                    <input type="text" placeholder="Search products...">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
@@ -68,7 +68,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li class="mobile-dropdown">
-                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile-dropdown-menu">
                         <li><a href="#">Electronics</a></li>
                         <li><a href="#">Clothing</a></li>
@@ -79,8 +79,21 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div class="mobile-nav-footer">
+                <a href="#" class="mobile-icon-link"><i class="far fa-heart"></i> Wishlist <span class="mobile-icon-badge">3</span></a>
+                <a href="#" class="mobile-icon-link"><i class="fas fa-shopping-cart"></i> Cart <span class="mobile-icon-badge">5</span></a>
+                <a href="#" class="mobile-icon-link"><i class="far fa-user"></i> Account</a>
+            </div>
         </div>
     </header>
+
+    <main>
+        <!-- Your page content here -->
+        <div class="content">
+            <h1>Welcome to our E-commerce Store</h1>
+            <p>This is sample content to demonstrate the sticky navbar behavior.</p>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
